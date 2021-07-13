@@ -9,30 +9,17 @@ html{
     scroll-behavior: smooth;
 }
 /* navbar styling */
-
 .navbar{
     position: fixed;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    color:#fff;
-    background: #111;
-
 }
-
-
 .navbar.sticky{
     padding: 15px 0;
     background: crimson;
-}
-
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin:auto ;
-
 }
 .navbar .max-width{
     display: flex;
@@ -40,7 +27,7 @@ html{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color:#fff;
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
@@ -49,27 +36,27 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color:#fff;
+    color: #fff;
 }
 .navbar .menu li{
     list-style: none;
     display: inline-block;
-} 
+}
 .navbar .menu li a{
-     display: block;
-    color:#fff;
+    display: block;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
-
 }
 .navbar .menu li a:hover{
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color:#fff;
+    color: #fff;
 }
+
 
 /*menu btn styling*/
 .menu-btn{
@@ -84,18 +71,27 @@ html{
     width: 42px;
     background: crimson;
     right: 30px;
-    bottom: 30px;
+    bottom: 10px;
     text-align: center;
     line-height: 45px;
     color: #fff;
     z-index: 9999;
-    font-size:30px ;
+    font-size: 30px;
     border-radius: 6px;
+    border-bottom-width: 2px;
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
+    transition: all 0.3s ease;
 }
-.scroll-up-btn
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
 
 
 
